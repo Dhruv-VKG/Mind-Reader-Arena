@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mindreader-arena"
+version = "0.1.0"
+description = "Rock-Paper-Scissors against AI bots that try to read your mind."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+mindreader = "mindreader.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mindreader*"]
